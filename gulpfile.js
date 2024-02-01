@@ -5,7 +5,7 @@ const uglify = require('gulp-uglify');
 
 
 gulp.task('sass', function () {
-    return gulp.src('src/scss/**/*.scss')
+    return gulp.src('src/**/*.scss')
         .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
         .pipe(gulp.dest('dist/css'));
 });
@@ -19,7 +19,7 @@ gulp.task('imagemin', function () {
 
 
 gulp.task('uglify', function () {
-    return gulp.src('src/js/**/*.js')
+    return gulp.src('src/scripts/**/*.js')
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'));
 });

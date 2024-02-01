@@ -1,0 +1,39 @@
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ecf0f1;
+    color: #333;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        width: 30%;
+        height: 320px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin: 5px;
+    }
+}
+
+button {
+    background-color: $primary-color;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken($primary-color, 10%);
+    }
+
+    &:not(:first-child) {
+        margin-left: 5px;
+    }
+}

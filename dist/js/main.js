@@ -1,0 +1,1 @@
+let currentPage=1;function changePage(e){document.getElementById("page"+currentPage).style.display="none",currentPage=e,document.getElementById("page"+currentPage).style.display="flex"}
